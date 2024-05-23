@@ -1,0 +1,24 @@
+2024-05-23 19:56:18,916 Model INFO: Using 1 GPUS
+2024-05-23 19:56:18,916 Model INFO: Namespace(config_file='', opts=['SOLVER.MAX_EPOCHS', '10'])
+2024-05-23 19:56:18,916 Model INFO: Running with config:
+DATALOADER:
+  NUM_WORKERS: 8
+DATASETS:
+  TEST: data/datasets/test.csv
+  TEST_WA: data/datasets/STSint.testinput.answers-students.wa
+  TRAIN: data/datasets/train.csv
+MODEL:
+  DEVICE: cuda:0
+  DROPOUT: 0.1
+  HIDDEN_NEURONS: 1024
+  NUM_CLASSES: 12
+OUTPUT_DIR: output
+SOLVER:
+  BASE_LR: 0.0001
+  BATCH_SIZE: 1
+  LOG_PERIOD: 100
+  MAX_EPOCHS: 10
+  OPTIMIZER_NAME: ADAM
+TEST:
+  BATCH_SIZE: 1
+  WEIGHT: 
